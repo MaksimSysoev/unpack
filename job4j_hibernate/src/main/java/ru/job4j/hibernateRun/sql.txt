@@ -1,0 +1,15 @@
+CREATE DATABASE db
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Russian_Russia.1251'
+    LC_CTYPE = 'Russian_Russia.1251'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+	create table users (
+	id serial primary key,
+	login varchar(1000),
+	password varchar(1000),	
+	create_date date
+);
